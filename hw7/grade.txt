@@ -1,0 +1,26 @@
+Regrading hw2
+===
+
+Basic Tests
+===
+1 / 1: play.sh exists and is executable.
+1 / 1: play.sh resulted in a program listening on that port.
+
+Correct Functioning Tests
+===
+3 / 3: Game ran correctly with TA server and two student clients.
+3 / 3: Game ran correctly with student server and two TA clients.
+3 / 3: Game ran correctly with TA server and client, and one student client.
+
+Incorrect Functioning Tests
+===
+0 / 1: Student client did not exit with code 1 when TA server broke protocol.
+0 / 1: Student server did not exit with status 1 when TA client broke protocol.
+0 / 1: Student client did not hang for at least 5 seconds when the TA server went silent mid protocol.
+1 / 1: Student server successfully hung for 5 seconds when a TA client went silent mid protocol.
+
+Bonus Point
+===
+1 / 1: Game was successfully completed within 2 seconds with student server, one TA client connecting over IPv4, and a second TA client connecting over IPv6.
+
+total: 13 / 15

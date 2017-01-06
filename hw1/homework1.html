@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+    <title>CS 450: Introduction to Networking &middot; homework 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Course web page for CS 450 at UIC.">
+
+    <link href="/~ckanich/cs450/f14/css/bootstrap.css" rel="stylesheet">
+    <link href="/~ckanich/cs450/f14/css/site.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></sc\
+ript>
+    <![endif]-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21532225-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+    <!-- Place anything custom after this. -->
+  </head>
+  <body>
+    
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/~ckanich/cs450/f14">CS 450: Introduction to Networking</a>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+  <div class="bs-sidebar hidden-print" >
+    <ul class="nav bs-sidenav">
+      
+            
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+          <li ><a href="/~ckanich/cs450/f14/index.html">home</a> </li>        
+                  
+              
+                  
+              
+                  
+        
+        <ul class="nav">
+          
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+                    
+          </ul>        
+      
+            
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+          <li ><a href="/~ckanich/cs450/f14/syllabus.html">syllabus</a> </li>        
+                  
+        
+        <ul class="nav">
+          
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+                    
+          </ul>        
+      
+            
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+          <li ><a href="/~ckanich/cs450/f14/schedule.html">schedule</a> </li>        
+                  
+              
+                  
+        
+        <ul class="nav">
+          
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+                    
+          </ul>        
+      
+            
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+          <li ><a href="/~ckanich/cs450/f14/homeworks.html">homeworks</a> </li>        
+                  
+              
+                  
+              
+                  
+              
+                  
+        
+        <ul class="nav">
+          
+            
+            <li class="active"  ><a href="/~ckanich/cs450/f14/homework1.html">homework 1</a> </li>                  
+            
+            
+            <li   ><a href="/~ckanich/cs450/f14/homework2.html">homework 2</a> </li>                  
+            
+            
+            <li   ><a href="/~ckanich/cs450/f14/homework3.html">homework 3</a> </li>                  
+            
+            
+            <li   ><a href="/~ckanich/cs450/f14/homework4.html">homework 4</a> </li>                  
+            
+            
+            <li   ><a href="/~ckanich/cs450/f14/homework5.html">homework 5</a> </li>                  
+            
+            
+            <li   ><a href="/~ckanich/cs450/f14/homework6.html">homework 6</a> </li>                  
+            
+            
+            <li   ><a href="/~ckanich/cs450/f14/homework7.html">homework 7</a> </li>                  
+            
+                    
+            
+                    
+            
+                    
+            
+                    
+                    
+          </ul>        
+      
+        <li><a href="https://piazza.com/class/hya5f4mg5o16tq">discussion</a></li>
+    </ul>
+  </div>
+</div>
+
+        <div class="col-md-9" role="main">
+          <h3 id="homework-1-aws-git-and-a-web-client">Homework 1: AWS, git, and a web client</h3>
+
+<h4 id="accessing-your-virtual-machine">Accessing your virtual machine</h4>
+
+<p>For this class, you will be using a virtual machine hosted by Amazon Web
+Services. This virtual machine is running Ubuntu 14.04. You have received
+instructions on how to access this virtual machine via email.</p>
+
+<h3 id="git-class-repositories-repos">git, class repositories (repos)</h3>
+
+<p>The main objective of this homework is to get you familiarized with the
+versioning system we will be using for homework turn-in, called git. Git is a
+decentralized revision control system.  You will also get a quick introduction
+to network programming in C, which will be our main language in the course.</p>
+
+<p>Using your private key, check out the public course repository:</p>
+
+<pre>git clone git@git.uicbits.net:cs450-f14/public.git</pre>
+
+<p>Once you’ve cloned the public repo, you will have a directory
+<code>public</code> filled with useful files for all students. Some of those
+files will allow you to use IP version 6 on your virtual machine. You will
+first need to add some packages and prepare your VM for connecting to our IPv6
+VPN. To prepare your new ubuntu install for class, run these commands from
+within the public repo you just cloned: </p>
+
+<pre>
+cd public
+cd utils
+tar xzf bitsvpn.tgz
+cd bitsvpn
+sudo ./install.sh
+</pre>
+
+<p>If all goes well, your virtual machine is now on the IPv6 Internet. You can
+verify this by trying the command:</p>
+
+<pre>$ ping6 ipv6.google.com</pre>
+
+<p>If that ping command works, you’re in business! Now you’re ready for the fun
+part.</p>
+
+<p>Refer to the discussion site if you have further questions.</p>
+
+<h4 id="your-personal-repository">your personal repository</h4>
+
+<p>You can also check out your personal repository:</p>
+
+<pre>git clone git@git.uicbits.net:cs450-f14/YOURUSERNAME.git</pre>
+
+<p>You will want to copy the skeleton code from the public direcotry to your new
+<code>YOURUSERNAME</code> directory. Here, my username is
+<code>ckanich-student</code>. When you first clone the repository, it will be
+empty. Your first task is to copy the <code>hw1</code> skeleton code to your
+repository. If you’ve done that correctly, the <code>tree</code> program will
+print a graphical (ascii art) representation of the directories and files
+within the current directory:</p>
+
+<pre>
+ubuntu@ip-10-143-165-210:~$ cd ckanich-student
+ubuntu@ip-10-143-165-210:~/ckanich-student$ tree
+.
+└── hw1
+    ├── hw1.c
+    ├── Makefile
+    └── SUBMISSION_COMMENTS.txt
+
+1 directory, 3 files
+</pre>
+
+<p>Now, just to test things out, let’s add these files to the repository, commit them, and send the changes to the central server.</p>
+
+<pre>
+ubuntu@ip-10-143-165-210:~/ckanich-student$ git add hw1
+ubuntu@ip-10-143-165-210:~/ckanich-student$ git commit -a -m'added hw1 skeleton'
+[master e66c87f] added hw1 skeleton
+ 3 files changed, 77 insertions(+)
+ create mode 100644 hw1/Makefile
+ create mode 100644 hw1/SUBMISSION_COMMENTS.txt
+ create mode 100644 hw1/hw1.c
+ubuntu@ip-10-143-165-210:~/ckanich-student$ git push
+Counting objects: 7, done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.13 KiB, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To git@git.uicbits.net:cs450-f14/ckanich-student.git
+   4781aea..e66c87f  master -&gt; master
+ubuntu@ip-10-143-165-210:~/ckanich-student$
+</pre>
+
+<p><strong>Remember</strong>, if you don’t push, we don’t see it! We will be making copies of
+the repositories at each deadline (full credit, 10% off, etc), so do not leave
+this for the last minute. If you submit it one second too late, you’ll be in
+the next lateness bracket, no exceptions.</p>
+
+<h3 id="the-programming-part">The Programming Part!</h3>
+
+<p>For this week’s programming exercise, we will create a barebones web client
+(think <code>wget</code>). Based on the example tcp client code in the
+<code>hw1</code> in the public repository, and the HTTP example sessions shown
+in class, you will write a command-line program called <code>hw1</code> that
+takes a URL as its only parameter, retrieves the indicated file, and stores it
+in the local directory with the appropriate filename. If the URL does not end
+in a filename, your program should automatically request the file ‘index.html’.
+Make sure it works for both text and images by opening the stored file in a web
+browser.</p>
+
+<p>You may assume that the URL is on the form <a target="_top" href="http://host/path">http://host/path</a>, where path may or may not be an
+empty string, may or may not contain multiple slashes (for subdirectories), and
+may or may not contain a file name. You may assume files to be no larger than
+one megabyte, and you are not expected to follow any HTTP redirect (3xx); your
+code can simply exit without saving any file.</p>
+
+<p>The hostname may be a name like www.google.com, but the example code requires
+an ip address (like 64:ff9b::83c1:201d). To look up the IP address of a given
+host name, use <code>getaddrinfo()</code>. <code>man 3 getaddrinfo</code> on the command line will give
+you the details, or use <a target="_top" href="http://linux.die.net/man/3/gethostbyname">this link</a>, and see the
+<code>getaddrinfo.c</code> example.</p>
+
+<h4 id="template">Template</h4>
+
+<p>For this homework, there is a prepared skeleton directory that you may use
+located in the public git repository.</p>
+
+<h4 id="a-few-hints">A few hints</h4>
+
+<ul>
+  <li>Use http version 1.0. Version 1.1 can get a lot more complicated.</li>
+  <li>Good functions to use for handling filenames and text include <code>sprintf, sscanf, strstr, strchr</code>.</li>
+  <li>Section 2.2.2-2.2.3 in the book should also be helpful. Your book talks about the “request line” and “header lines” for an HTTP request. You will only need to use the request line and the host line of the header.</li>
+</ul>
+
+<p>Read more about these using the man pages. For example, try <code>man sprintf</code> on
+the command line.</p>
+
+<ul>
+  <li>
+    <p>A “newline” in http consists of two ascii characters: <code>\r\n</code>, not just <code>\n</code>.</p>
+  </li>
+  <li>
+    <p>Your program will be tested (at least) on these urls:</p>
+  </li>
+</ul>
+
+<pre>
+http://www.google.com/
+http://www.google.com/intl/en_ALL/images/logo.gif
+http://www.google.com/thispagedoesnotexist
+http://www.thissitedoesnotexist1776.com 
+http://www.engadget.com/2010/08/27/amazon-kindle-review
+http://www.engadget.com/2010/08/27/amazon-kindle-review/
+</pre>
+
+<ul>
+  <li>Make sure you handle all these cases gracefully. If you don’t send a host</li>
+  <li>
+    <p>header, the first should produce a
+file <code>index.html</code>, the second the google logo saved into the file <code>logo.gif</code>,
+and the rest should produce an error because they do not give you a <code>200 OK</code>
+response; you can thus quit your program by calling  <code>exit(1)</code>. <a href="http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html">Beej’s Guide to Network Programming</a> is a
+great resource you may want to make use of. </p>
+  </li>
+  <li>
+    <p>If you’re curious, try firing up Wireshark, and then fetching the URL with
+<code>wget</code> or <code>curl</code>. You’ll find the request they sent
+(which may have a lot of additional parameters in it) in one of the packets
+with destination port 80.</p>
+  </li>
+  <li>Spend some time thinking about how to do the string manipulation. It does not have to be complicated. The complete program, including comments, error handling etc. can be written in about 100 leisurely lines.</li>
+</ul>
+
+<h3 id="turn-in-instructions">Turn-in instructions</h3>
+
+<p>For your turn-in, prepare a Makefile that compiles the hw1 target. To make sure your submission is complete, try the following <em>in a temporary directory</em>, i.e. create and change into a temporary directory under the <code>/tmp</code> filesystem:</p>
+
+<pre>
+mkdir /tmp/hw1-temp
+cd /tmp/hw1-temp
+git clone git@git.uicbits.net:cs450-f14/MYUSERNAME.git
+cd hw1
+make
+./hw1 http://www.google.com/index.html 
+</pre>
+
+<p>This process should produce a file called index.html in the current working directory, containing the source for the google front page.</p>
+<pre>
+./hw1 http://www.google.com/intl/en_ALL/images/logo.gif 
+</pre>
+
+<p>Running this line should produce a file called logo.gif, containing the google logo.</p>
+
+<h4 id="grading">Grading</h4>
+<p>Grading will be done automatically using a script.  We will publish this script after grading has completed; you are responsible for writing your own test cases. If you wish, you can share test cases you have written with the class. Students who share test cases publicly will very likely receive extra participation credit.</p>
+
+<h3 id="due-date">Due Date</h3>
+<p>This assignment is due Wednesday, September 3rd, at 3pm. See the syllabus for the late turnin policy. This assignment is worth just as much as every other homework, so getting as much credit on it as possible is important (don’t turn in late!).</p>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Footer
+    ================================================== -->
+    <div class="clearfix"></div>
+    <footer class="bs-footer" role="contentinfo">
+    <div class="container">    
+         <ul class="footer-links">
+          <li><a href="http://www.cs.uic.edu/~ckanich">Chris Kanich</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="http://www.cs.uic.edu/">UIC Computer Science</a></li>
+        </ul>
+    </div>
+    </footer>
+    <!-- JS and analytics only. -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="//code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/~ckanich/cs450/f14/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
+
+
